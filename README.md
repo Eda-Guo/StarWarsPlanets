@@ -3,7 +3,14 @@
 This project is for getting planets' information from [Star Wars API](https://swapi.py4e.com/api/planets/).
 
 ## Overview
+### Welcome Page
 ![welcome page](public/screen/mainPage.JPG) 
+
+### Get Planets Information
+![Planets Info](public/screen/table.JPG)
+
+### Display Population Chart
+![Population Chart](public/screen/chart.JPG)
 
 ## Available Scripts
 
