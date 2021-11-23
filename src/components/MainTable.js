@@ -8,8 +8,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 class MainTable extends React.Component {
-
-
     render() {
         const planets = this.props.planets;
         const headStyle = {

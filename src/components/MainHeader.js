@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class MainHeader extends React.Component {
   render() {
     return (
@@ -9,7 +8,6 @@ class MainHeader extends React.Component {
           Welcome to Star Wars Planets
         </h1>
       </div>
-
     );
   }
 }

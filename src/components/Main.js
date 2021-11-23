@@ -12,6 +12,7 @@ import Chart from 'chart.js/auto'
 
 class Main extends React.Component {
   constructor() {
+    
     super();
     this.state = {
       planets: [],
@@ -22,9 +23,10 @@ class Main extends React.Component {
     }
     this.getData = this.getData.bind(this);
     this.changePage = this.changePage.bind(this);
+    
   }
 
-
+  // get planets data from root url 
   getData() {
     axios.get('https://swapi.py4e.com/api/planets/')
       .then(response => {
@@ -39,15 +41,16 @@ class Main extends React.Component {
         alert(error);
       })
   }
-
+  
+  // get planets data from Pagination
   changePage(event, value) {
     var pageNum = value;
     var url = "https://swapi.py4e.com/api/planets/?page=" + pageNum;
     this.setState({ page: value });
-    // get data from [next]
     this.getDataFromNextPage(url);
   }
-
+  
+  // get data from specific page
   getDataFromNextPage(url) {
     axios.get(url)
       .then(response => {
@@ -61,7 +64,8 @@ class Main extends React.Component {
         alert(error);
       })
   }
-
+  
+  // get data to update chart lables
   getCharLable() {
     var lables = [];
     this.state.planets.forEach((currPla) => {
@@ -69,7 +73,7 @@ class Main extends React.Component {
     });
     this.setState({ charLabel: lables });
   }
-
+  // get data to update chart data 
   getCharData() {
     var datas = [];
     this.state.planets.forEach((currPla) => {
@@ -120,7 +124,6 @@ class Main extends React.Component {
             <Pagination size="large" count={this.state.pageCount} page={this.state.page} onChange={this.changePage} showFirstButton showLastButton />
           </Box>
         </div>
-
       </div>
     );
   }

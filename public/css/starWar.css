@@ -1,7 +1,5 @@
 .header {
     height: 200px;
-    /* background-image: url('/img/headerBackground.jpg'); */
-    /* background-image: url('/img/header.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -9,7 +7,7 @@
 }
 
 h1 {
-    color:#352510;
+    color:#24190b;
     text-shadow: 0 0 10px #dac58b, 10px 0 50px #8bbdda; 
     text-align: center;
     line-height:180px;
@@ -50,7 +48,6 @@ h1 {
     color: beige;
     background-image: linear-gradient(to bottom  , #2e0606, #06182e 80%);
     padding: 30px;
-
 }
 
 a {
