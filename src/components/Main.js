@@ -6,6 +6,7 @@ import Pagination from '@mui/material/Pagination';
 import { styled } from '@material-ui/styles';
 import { Box } from '@material-ui/core';
 import { Bar } from 'react-chartjs-2';
+import Chart from 'chart.js/auto'
 
 
 
