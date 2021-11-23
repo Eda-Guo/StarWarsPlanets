@@ -1,0 +1,60 @@
+.header {
+    height: 200px;
+    /* background-image: url('/img/headerBackground.jpg'); */
+    /* background-image: url('/img/header.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: linear-gradient(0.4turn  , #0f1941 ,beige, #e96d47);
+}
+
+h1 {
+    color:#352510;
+    text-shadow: 0 0 10px #dac58b, 10px 0 50px #8bbdda; 
+    text-align: center;
+    line-height:180px;
+    font-size: 50px;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-image: url('/img/mainBack.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    min-height: 850px;
+    opacity: 0.95;
+}
+
+.butContainer {
+    text-align: center; 
+    padding: 20px;
+}
+
+
+.tableContainer {
+    text-align: center; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.chartContainer {
+    background-color: #f5ece0;
+}
+
+.copyright {
+    background-image: url('/img/wall.jpg');
+    min-height: 60px;
+    text-align: center;
+    color: beige;
+    background-image: linear-gradient(to bottom  , #2e0606, #06182e 80%);
+    padding: 30px;
+
+}
+
+a {
+    color: beige;
+}
+
+
